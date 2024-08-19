@@ -9,7 +9,7 @@ const filePath = path.join(__dirname, 'Myfile.txt');//joining the file path
 //reading the file
 fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
-        console.error('Error reading the file',err);
+        console.error('Error reading the file');
         return;
     }
     console.log(data);

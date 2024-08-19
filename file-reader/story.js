@@ -20,7 +20,7 @@ function printWithDelay(text, delay) {
 // Read the story file
 fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
-        console.error('Error reading the file:', err);
+        console.error('Error reading the file');
         return;
     }
     printWithDelay(data, 100); // delay between each character
